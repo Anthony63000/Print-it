@@ -26,15 +26,12 @@ let index 		= 0;
 // On ajoute les bullet point au projet 
 
 let bulletPointContainer = document.querySelector('.dots');
-let bulletPointUl 		 = document.createElement('ul');
-bulletPointContainer.appendChild(bulletPointUl);
-bulletPointUl.classList.add("dots");
 
 for (let i = 0; i < slides.length; i++) {
 	
-	let bulletPointLi = document.createElement('li');
-	bulletPointUl.appendChild(bulletPointLi);
-	bulletPointLi.classList.add('dot');
+	let bulletPoint = document.createElement('span');
+	bulletPointContainer.appendChild(bulletPoint);
+	bulletPoint.classList.add('dot');
 }
 
 // Récupération de la liste créer et attribution du bullet point selectionné
@@ -45,8 +42,9 @@ elementList[index].classList.add('dot_selected');
 // On récupère la div qui contien les tagLine et les images
 
 let NewTaglineContainer = document.querySelector('#banner');
-let newImage 		    = document.querySelector('.banner-img');
 let NewTagline 		    = NewTaglineContainer.querySelector('p');
+let newImage 		    = document.querySelector('.banner-img');
+
 
 // On ajoute les événement au click
 
@@ -71,7 +69,7 @@ arrow_left.addEventListener('click', () => {
 		elementList[index + 1].classList.remove('dot_selected');
 
 	}
-})
+ })
 
 arrow_right.addEventListener('click', () => {
 	
