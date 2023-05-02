@@ -1,4 +1,4 @@
-const slides = [
+const SLIDES = [
 	{
 		"image":"assets/images/slideshow/slide1.jpg",
 		"tagLine":"Impressions tous formats <span>en boutique et en ligne</span>"
@@ -19,8 +19,8 @@ const slides = [
 
 // On récupère les classes pour les flèches
 
-let arrow_left  = document.querySelector('.arrow_left');
-let arrow_right = document.querySelector('.arrow_right');
+let arrowleft  = document.querySelector('.arrow_left');
+let arrowRight = document.querySelector('.arrow_right');
 let index 		= 0;
 
 // On ajoute les bullet point au projet 
@@ -67,7 +67,7 @@ arrow_left.addEventListener('click', () => {
 		NewTagline.innerHTML = slides[index].tagLine;
 		elementList[index].classList.add('dot_selected');
 		elementList[index + 1].classList.remove('dot_selected');
-
+		
 	}
  })
 
