@@ -1,4 +1,4 @@
-const SLIDES = [
+const slides = [
 	{
 		"image":"assets/images/slideshow/slide1.jpg",
 		"tagLine":"Impressions tous formats <span>en boutique et en ligne</span>"
@@ -19,7 +19,7 @@ const SLIDES = [
 
 // On récupère les classes pour les flèches
 
-let arrowleft  = document.querySelector('.arrow_left');
+let arrowLeft  = document.querySelector('.arrow_left');
 let arrowRight = document.querySelector('.arrow_right');
 let index 		= 0;
 
@@ -48,7 +48,7 @@ let newImage 		    = document.querySelector('.banner-img');
 
 // On ajoute les événement au click
 
-arrow_left.addEventListener('click', () => {
+arrowLeft.addEventListener('click', () => {
 
 	//console.log("Clique gauche effectué");
 
@@ -71,7 +71,7 @@ arrow_left.addEventListener('click', () => {
 	}
  })
 
-arrow_right.addEventListener('click', () => {
+arrowRight.addEventListener('click', () => {
 	
 	//console.log("Clique droit effectué");
 
